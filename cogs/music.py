@@ -198,7 +198,7 @@ class Music(commands.Cog):
     @discord.app_commands.command(name="shuffle")
     async def shuffle(self, interaction: discord.Interaction):
         Music.vc.queue.shuffle()
-        await interaction.response.send_message("Shuffle enabled", ephemeral=False)
+        await interaction.response.send_message("Your queue has been shuffled", ephemeral=False)
 
     # Activates when track starts playing
     @commands.Cog.listener()
